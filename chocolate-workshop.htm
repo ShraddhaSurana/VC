@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Vulpine &raquo; "clever and crafty"</title>
+<meta name="description" content="An introduction to the Bigg HTML web template.">
+<meta name="robots" content="noodp,noydir">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" id="child-theme-css" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-main-css-css" href="css/responsive-main.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-css-css" href="css/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="tb_styles-css" href="css/tb-styles.min.css" type="text/css" media="all">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script>
+  jQuery(window).scroll(function (event) {
+	  	
+		var top = jQuery('#popular-upcoming').offset().top - jQuery(document).scrollTop();;
+		// what the y position of the scroll is
+		var y = jQuery(this).scrollTop();
+		// whether that's below the form
+		if (y >= top)  {
+		// if so, add the active class to popular-upcoming and remove from content
+		jQuery('.page-nav-popular-posts').addClass('active');
+		jQuery('.page-nav-top-posts').removeClass('active');
+		} else {
+		// otherwise remove it
+		jQuery('.page-nav-popular-posts').removeClass('active');
+		jQuery('.page-nav-top-posts').addClass('active');
+	   }
+  });
+  
+  jQuery(document).ready(function (){
+  jQuery('#popular-scroll').click(function (){
+            //jQuery(this).animate(function(){
+                jQuery('html, body').animate({
+                    scrollTop: jQuery('#popular-upcoming').offset().top
+                     }, 2000);
+            //});
+        });
+		
+		jQuery('#feature-scroll').click(function (){
+            //jQuery(this).animate(function(){
+                jQuery('html, body').animate({
+                    scrollTop: jQuery('#inner').offset().top
+                     }, 2000);
+            //});
+        });
+		  });
+	  </script>
+</head>
+
+<body class="single single-post postid-5 single-format-standard header-full-width sidebar-content">
+  <div id="header">
+  <div class="site-header">
+
+<div id="site-header-bigg-social">
+      
+    </div>  
+    </div>
+  </div>
+  <div id="wrap">
+
+  <div id="inner"><div class="wrap">	<div id="content-sidebar-wrap">
+				<div id="content" class="hfeed">
+				<div class="post-5 post type-post status-publish format-standard hentry category-featured category-parent-category-i entry">
+
+				<h1 class="entry-title">Chocolate making workshop</h1> 
+		
+				<div class="entry-content">
+			<p>We teach a variety of chocolates includng soft centered, etc </p>
+
+		</div><!-- end .entry-content -->
+		
+	</div><!-- end .postclass -->			
+								</div><!-- end #content -->
+
+	</div><!-- end #content-sidebar-wrap -->
+
+ 
+</div><!-- end #wrap -->
+
+
+</body>
+
+</html>
